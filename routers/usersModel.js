@@ -6,6 +6,13 @@ const newAccount = (obj) => {
     
 }
 
+const findByUsername = (username) => {
+
+    return db('users').where({username}).first();
+
+}
+
 module.exports = {
-    newAccount
+    newAccount,
+    findByUsername
 }
