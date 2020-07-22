@@ -12,7 +12,12 @@ const findByUsername = (username) => {
 
 }
 
+const findAll = () => {
+    return db('users');
+}
+
 module.exports = {
     newAccount,
-    findByUsername
+    findByUsername,
+    findAll
 }
